@@ -1,0 +1,103 @@
+body{
+    background-image: linear-gradient(#b613cc, #cf42b8);
+    background-attachment: fixed;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    max-width: 1080px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header{
+    background-color: #000000;
+    width: 100%;
+}
+.logo, .social{
+    width: 12%;
+}
+.menu{
+    width: 20%;
+}
+.menu nav a{
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px;
+    position: relative;
+}
+.menu nav a::after{
+    content: " ";
+    width: 0px;
+    height: 4px;
+    background-image: linear-gradient(45deg, #ed32f3, #7d0b81 );
+    position: absolute;
+    top: 30px;
+    left: 0;
+    transition: width 0.5s;
+}
+.menu nav a:hover::after{
+    width: 30px;
+}
+.social button{
+    height: 35px;
+    width: 35px;
+    background-image: linear-gradient(45deg, #ed32f3, #7d0b81 );
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-left: 5px;
+}
+.social button i{
+    font-size: 25px;
+    color: #ffffff;
+}
+.quadrado{
+    width: 400px;
+    height: 720px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    margin-top: 3.7%;
+    margin-left: 39%;
+}
+.titulo{
+    text-align: center;
+    font-size: 50px;
+    padding-top: 3%;
+}
+.teste1{
+    text-align: center;
+    font-size: 30px;
+}
+.inputcontainer{
+     display: flex;
+     justify-content: center;
+}
+input[type="number"]{
+    width: 300px;
+    height: 30px;
+    border-radius: 8px;
+}
+.botao{
+    display: flex;
+    justify-content: center;
+}
+.resul{
+    text-align: center;
+    margin-top: 3%;
+    font-size: 30px;
+}
+#botao{
+    width: 160px;
+    height: 70px;
+    border-radius: 5px;
+    background-color: #288a1f;
+    color: #ffffff;
+    font-size: 15px;
+    text-align: center;
+    border: none;
+}
