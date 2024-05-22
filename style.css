@@ -100,4 +100,10 @@ input[type="number"]{
     font-size: 15px;
     text-align: center;
     border: none;
+    cursor: pointer;
+}
+#botao:hover{
+    background-color: #86e07e;
+    color: #000000;
+    transition: background-color 0.3s ease;
 }
