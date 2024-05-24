@@ -1,4 +1,4 @@
-function calcular(){
+function salariobruto(){
 
     const salario_base = parseFloat(document.getElementById('base').value);
     const gratificações  = parseFloat(document.getElementById('grat').value);

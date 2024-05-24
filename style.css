@@ -56,7 +56,7 @@ header{
     font-size: 25px;
     color: #ffffff;
 }
-.quadrado{
+.retângulo{
     width: 400px;
     height: 720px;
     background-color: #ffffff;
@@ -69,7 +69,7 @@ header{
     font-size: 50px;
     padding-top: 3%;
 }
-.teste1{
+.tipo{
     text-align: center;
     font-size: 30px;
 }
@@ -89,7 +89,7 @@ input[type="number"]{
 .resul{
     text-align: center;
     margin-top: 3%;
-    font-size: 30px;
+    font-size: 25px;
 }
 #botao{
     width: 160px;
