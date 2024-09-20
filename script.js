@@ -7,7 +7,7 @@ function iniciarCalculo(){
     let salario_base = parseFloat(document.querySelector('#base').value);
     let gratificações  = parseFloat(document.querySelector('#gratificações').value)
     let adicionais  = parseFloat(document.querySelector('#adicionais').value)
-    let extras = parseFloat(document.querySelector('#extras').value);
+    let extras = parseFloat(document.querySelector('#horasExtras').value);
     let por_hora = parseFloat(document.querySelector('#hora').value);
  
     calcular(salario_base,gratificações,adicionais,extras,por_hora);
