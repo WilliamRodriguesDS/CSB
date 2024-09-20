@@ -1,11 +1,21 @@
-function salariobruto(){
+function escrever(mensagem){
+    let output = document.querySelector("#output");
+    output.innerHTML = mensagem;
+}
 
-    const salario_base = parseFloat(document.getElementById('base').value);
-    const gratificações  = parseFloat(document.getElementById('grat').value);
-    const adicionais  = parseFloat(document.getElementById('add').value);
-    const extras  = parseFloat(document.getElementById('extras').value);
-    const por_hora = parseFloat(document.getElementById("hora").value);
+function iniciarCalculo(){
+    let salario_base = parseFloat(document.querySelector('#base').value);
+    let gratificações  = parseFloat(document.querySelector('#gratificações').value)
+    let adicionais  = parseFloat(document.querySelector('#adicionais').value)
+    let extras = parseFloat(document.querySelector('#extras').value);
+    let por_hora = parseFloat(document.querySelector('#hora').value);
+ 
+    calcular(salario_base,gratificações,adicionais,extras,por_hora);
+}
 
-    const resultado = salario_base + gratificações + adicionais + (extras * por_hora);
-    document.getElementById('resultado').innerHTML= "R$" + " " + resultado.toFixed(2);
+function calcular(salario_base,gratificações,adicionais,extras,por_hora){
+
+    let resultado = (salario_base + gratificações + adicionais + (extras * por_hora));
+
+    escrever("R$ " + resultado);
     }
